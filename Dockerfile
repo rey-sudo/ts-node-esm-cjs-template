@@ -12,6 +12,6 @@ COPY . .
 
 RUN npm run build
 
-EXPOSE 8001
+EXPOSE 8003
 
-CMD ["sh", "-c", "npm run setup && npm start"]
+CMD ["sh", "-c", "npm run bootstrap && npm start"]
